@@ -5,7 +5,7 @@
 variable "aws_region" {
   description = "AWS region where resources will be created"
   type        = string
-  default     = "us-west-2"
+  default     = "eu-north-1"
 }
 
 variable "cluster_name" {
@@ -23,7 +23,7 @@ variable "environment" {
 variable "kubernetes_version" {
   description = "Kubernetes version for EKS cluster"
   type        = string
-  default     = "1.33"
+  default     = "1.34"
 }
 
 variable "vpc_cidr" {
@@ -53,5 +53,5 @@ variable "enable_single_nat_gateway" {
 variable "enable_monitoring" {
   description = "Enable monitoring stack (Prometheus, Grafana)"
   type        = bool
-  default     = false
+  default     = true
 }
